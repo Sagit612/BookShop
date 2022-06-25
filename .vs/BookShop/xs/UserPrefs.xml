@@ -1,4 +1,23 @@
 ﻿<Properties StartupConfiguration="{2E0E9DDA-57F2-40CC-BBD5-3F94DCD821F3}|Default">
-  <MonoDevelop.Ide.ItemProperties.BookShop FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.BookShop PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookShop" expanded="True">
+            <Node name="BookShop" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

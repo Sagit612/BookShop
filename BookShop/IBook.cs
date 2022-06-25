@@ -3,7 +3,7 @@ namespace BookShop
 {
     public interface IBook
     {
-        void AddBook();
+        void AddBook(int id, string title, string author, decimal price);
         string ShowAllBooksInfo();
         Book ShowBookById(int id);
         bool RemoveBookById(int id);

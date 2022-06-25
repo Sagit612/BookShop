@@ -1,0 +1,14 @@
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop.deps.json
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop.runtimeconfig.json
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop.runtimeconfig.dev.json
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop.dll
+/Users/sagit/Projects/BookShop/BookShop/bin/Debug/netcoreapp3.1/BookShop.pdb
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.csproj.AssemblyReference.cache
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.AssemblyInfoInputs.cache
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.AssemblyInfo.cs
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.csproj.CoreCompileInputs.cache
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.dll
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.pdb
+/Users/sagit/Projects/BookShop/BookShop/obj/Debug/netcoreapp3.1/BookShop.genruntimeconfig.cache

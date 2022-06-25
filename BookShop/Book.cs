@@ -56,6 +56,11 @@ namespace BookShop
                 price = value;
             }
         }
+
+        public override string ToString()
+        {
+            return $"{Id}, {Title}, {Author}, {Price}";
+        }
     }
 }
 

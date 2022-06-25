@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PPIN6a9Vldx6Z0ln8ZhWVrgH+mlTsUbVrffq5cjSV1h7uZIBfcij5RawNjQrXPA2vuea6+UuGw73jGOmTBpi2Q==",
+  "success": true,
+  "projectFilePath": "/Users/sagit/Projects/BookShop/BookShop/BookShop.csproj",
+  "expectedPackageFiles": [
+    "/Users/sagit/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/sagit/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.26/microsoft.netcore.app.host.osx-x64.3.1.26.nupkg.sha512",
+    "/Users/sagit/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

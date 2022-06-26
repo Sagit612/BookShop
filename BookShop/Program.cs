@@ -6,30 +6,63 @@ namespace BookShop
     {
         static void Main(string[] args)
         {
-            IBook shop = new Shop();
-            int input = 9;
-            while (input != 0)
+            IShop shop = new Shop();
+            int input = Option.INIT;
+            string inputBook = Option.INPUT_BOOK;
+            while (input != Option.EXIT)
             {
-                Console.WriteLine("1. Add book");
-                Console.WriteLine("2. Show information of all books");
-                input = int.Parse(Console.ReadLine());
+                input = IO.EnterMenuOptions();
                 switch (input)
                 {
-                    case 1:
-                        Console.Write("Enter ID:     ");
-                        int id = int.Parse(Console.ReadLine());
-                        Console.Write("Enter title:  ");
-                        string title = Console.ReadLine();
-                        Console.Write("Enter author: ");
-                        string author = Console.ReadLine();
-                        Console.Write("Enter price:  ");
-                        decimal price = decimal.Parse(Console.ReadLine());
-                        shop.AddBook(id, title, author, price);
+                    case Option.ADD_BOOK:
+                        do
+                        {
+                            inputBook = IO.EnterBook();
+                            switch (inputBook)
+                            {
+                                case Option.ADD_NORMAL_BOOK:
+                                    shop.AddBook(new Book(
+                                        IO.EnterId(),
+                                        IO.EnterTitle(),
+                                        IO.EnterAuthor(),
+                                        IO.EnterPrice(),
+                                        IO.EnterQuantity()));
+                                    break;
+                                case Option.ADD_GOLD_EDITION_BOOK:
+                                    shop.AddBook(new GoldenEditionBook(
+                                        IO.EnterId(),
+                                        IO.EnterTitle(),
+                                        IO.EnterAuthor(),
+                                        IO.EnterPrice(),
+                                        IO.EnterQuantity()));
+                                    break;
+                                default:
+                                    break;
+                            }
+                        } while (inputBook != Option.EXIT_ENTER_BOOK);
                         break;
-                    case 2:
-                        Console.WriteLine(shop.ShowAllBooksInfo());
+                    case Option.SHOW_ALL_BOOKS:
+                        IO.ToScreen(shop.ShowAllBooksInfo());
                         break;
-                    case 0:
+                    case Option.SHOW_BY_ID:
+                        IO.ToScreen(shop.ShowBookById(IO.EnterId()));
+                        break;
+                    case Option.SHOW_BY_NAME:
+                        IO.ToScreen(shop.ShowBooksByName(IO.EnterTitle()));
+                        break;
+                    case Option.REMOVE_BOOK:
+                        IO.ToScreen(IO.ShowMessage(shop.RemoveBookById(IO.EnterId())));
+                        break;
+                    case Option.UPDATE_BOOK:
+                        IO.ToScreen(IO.ShowMessage(shop.UpdateBookById(
+                            IO.EnterId(),
+                            IO.EnterTitle(),
+                            IO.EnterAuthor(),
+                            IO.EnterPrice(),
+                            IO.EnterQuantity()
+                            )));
+                        break;
+                    case Option.EXIT:
                         return;
                     default:
                         break;

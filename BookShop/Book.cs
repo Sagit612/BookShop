@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace BookShop
@@ -9,16 +10,18 @@ namespace BookShop
         private string title;
         private string author;
         private decimal price;
+        private int quantity;
 
-        public Book(int id, string title, string author, decimal price)
+        public Book(int id, string title, string author, decimal price, int quantity)
         {
             this.Id = id;
             this.Title = title;
             this.Author = author;
             this.Price = price;
+            this.Quantity = quantity;
         }
-
         public int Id { get => id; set => id = value; }
+
         public string Title
         {
             get => title;
@@ -26,7 +29,8 @@ namespace BookShop
             {
                 if (value.Length < 3)
                 {
-                    throw new ArgumentException("Title not valid!");
+                    throw new ArgumentException("Title must have more than 3 character!!! " +
+                        "Please enter title again");
                 }
                 title = value;
             }
@@ -57,9 +61,11 @@ namespace BookShop
             }
         }
 
+        public int Quantity { get => quantity; set => quantity = value; }
+
         public override string ToString()
         {
-            return $"{Id}, {Title}, {Author}, {Price}";
+            return $"{GetType()} {Id}, {Title}, {Author}, {Price}\n";
         }
     }
 }

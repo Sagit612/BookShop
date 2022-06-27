@@ -6,7 +6,7 @@ namespace BookShop
     {
         static void Main(string[] args)
         {
-            IShop shop = new Shop();
+            Shop shop = new Shop();
             int input = Option.INIT;
             string inputBook = Option.INPUT_BOOK;
             while (input != Option.EXIT)
@@ -42,7 +42,7 @@ namespace BookShop
                         } while (inputBook != Option.EXIT_ENTER_BOOK);
                         break;
                     case Option.SHOW_ALL_BOOKS:
-                        IO.ToScreen(shop.ShowAllBooksInfo());
+                        IO.ToScreen(shop.PrintInformation());
                         break;
                     case Option.SHOW_BY_ID:
                         IO.ToScreen(shop.ShowBookById(IO.EnterId()));

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace BookShop
 {
-    public class Shop : IShop
+    public class Shop : IShop, IInformation
     {
         private List<Book> books = new List<Book>();
 
@@ -50,12 +50,12 @@ namespace BookShop
             return false;
         }
 
-        public string ShowAllBooksInfo()
+        public string PrintInformation()
         {
             string result = "";
             foreach (var b in books)
             {
-                result = result + b.ToString();
+                result = result + b.PrintInformation();
             }
             return result;
         }

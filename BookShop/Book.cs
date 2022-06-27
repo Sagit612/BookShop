@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace BookShop
 {
-    public class Book
+    public class Book : IInformation
     {
         private int id;
         private string title;
@@ -63,7 +63,7 @@ namespace BookShop
 
         public int Quantity { get => quantity; set => quantity = value; }
 
-        public override string ToString()
+        public string PrintInformation()
         {
             return $"{GetType()} {Id}, {Title}, {Author}, {Price}\n";
         }

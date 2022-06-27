@@ -56,7 +56,7 @@ namespace BookShop
         }
         public static int EnterQuantity()
         {
-            Console.WriteLine("Enter quantity:  ");
+            Console.Write("Enter quantity:  ");
             int quantity = int.Parse(Console.ReadLine());
             return quantity;
         }

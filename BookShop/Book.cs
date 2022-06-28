@@ -65,7 +65,7 @@ namespace BookShop
 
         public string PrintInformation()
         {
-            return $"{GetType()} \t| ID: {Id} | Title: {Title} | Author: {Author} | Price: {Price}\n";
+            return $"{GetType()} \t| ID: {Id} | Title: {Title} | Author: {Author} | Price: {Price} | Quantity: {Quantity}\n";
         }
     }
 }

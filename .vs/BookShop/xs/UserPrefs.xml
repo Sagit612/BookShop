@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{2E0E9DDA-57F2-40CC-BBD5-3F94DCD821F3}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BookShop PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookShop/GoldenEditionBook.cs">
+    <Files>
+      <File FileName="BookShop/Book.cs" Line="33" Column="53" />
+      <File FileName="BookShop/GoldenEditionBook.cs" Line="16" Column="1" />
+      <File FileName="BookShop/IInformation.cs" Line="6" Column="10" />
+      <File FileName="BookShop/Shop.cs" Line="24" Column="18" />
+      <File FileName="BookShop/Program.cs" Line="58" Column="41" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BookShop" expanded="True">
-            <Node name="BookShop" expanded="True" />
+            <Node name="BookShop" expanded="True">
+              <Node name="GoldenEditionBook.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -18,6 +22,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BookShop PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

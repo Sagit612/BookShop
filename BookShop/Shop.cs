@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace BookShop
 {
-    public class Shop : IShop, IInformation
+    public class Shop : IInformation
     {
         private List<Book> books = new List<Book>();
 
@@ -24,7 +24,6 @@ namespace BookShop
                 {
                     books.Add(book);
                 }
-                
             }
             catch (ArgumentException ae)
             {
@@ -60,18 +59,18 @@ namespace BookShop
             return result;
         }
 
-        public string ShowBookById(int id)
+        public string FindBookById(int id)
         {
             Book bookInList = books.FirstOrDefault(i => i.Id.Equals(id));
-            if (bookInList != null) return bookInList.ToString();
+            if (bookInList != null) return bookInList.PrintInformation();
             return "There is no book with that id";
         }
-        public string ShowBooksByName(string title)
+        public string FindBooksByName(string title)
         {
             string result = "";
             foreach (var b in books.Where(n => n.Title.Equals(title)))
             {
-                result = result + b.ToString();
+                result = result + b.PrintInformation();
             }
             return result;
         }
